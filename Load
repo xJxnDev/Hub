@@ -73,7 +73,7 @@ local UICorner_24 = Instance.new("UICorner")
 --Properties:
 
 Gui.Name = "Gui"
-Gui.Parent = game.CoreGui
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Login.Name = "Login"
@@ -603,7 +603,7 @@ end
 
 -- Scripts:
 
-local function CWBGLGV_fake_script() -- TextButton.LocalScript 
+local function QVVQBT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 	local req = require
 	local require = function(obj)
@@ -638,8 +638,8 @@ local function CWBGLGV_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CWBGLGV_fake_script)()
-local function XFELLD_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QVVQBT_fake_script)()
+local function FPZF_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 	local req = require
 	local require = function(obj)
@@ -660,15 +660,7 @@ local function XFELLD_fake_script() -- TextButton_2.LocalScript
 	end
 	
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.GameDetectedGUI:TweenPosition(
-			UDim2.new(-0.281, 0,0.361, 0),
-			"In",
-			"Quad",
-			.5,
-			false
-		)
-		
+	script.Parent.MouseButton1Click:Connect(function()	
 		if game.PlaceId == 286090429 then
 			script.Parent.Parent.Parent.Parent.ArsenalGUI.Visible = true
 		else
@@ -679,8 +671,8 @@ local function XFELLD_fake_script() -- TextButton_2.LocalScript
 		
 	end)
 end
-coroutine.wrap(XFELLD_fake_script)()
-local function KXUN_fake_script() -- ArsenalGUI.Script 
+coroutine.wrap(FPZF_fake_script)()
+local function ASBXYTR_fake_script() -- ArsenalGUI.Script 
 	local script = Instance.new('Script', ArsenalGUI)
 	local req = require
 	local require = function(obj)
@@ -697,8 +689,8 @@ local function KXUN_fake_script() -- ArsenalGUI.Script
 	frame.Selectable = true
 	
 end
-coroutine.wrap(KXUN_fake_script)()
-local function ALQV_fake_script() -- ArsenalGUI.LocalScript 
+coroutine.wrap(ASBXYTR_fake_script)()
+local function XMEWU_fake_script() -- ArsenalGUI.LocalScript 
 	local script = Instance.new('LocalScript', ArsenalGUI)
 	local req = require
 	local require = function(obj)
@@ -723,8 +715,8 @@ local function ALQV_fake_script() -- ArsenalGUI.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ALQV_fake_script)()
-local function QLBYL_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(XMEWU_fake_script)()
+local function DCEF_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 	local req = require
 	local require = function(obj)
@@ -793,8 +785,8 @@ local function QLBYL_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QLBYL_fake_script)()
-local function RRGJZCA_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(DCEF_fake_script)()
+local function ISPEWR_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 	local req = require
 	local require = function(obj)
@@ -868,8 +860,8 @@ local function RRGJZCA_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RRGJZCA_fake_script)()
-local function RQLXAS_fake_script() -- Combat.Script 
+coroutine.wrap(ISPEWR_fake_script)()
+local function ZRWVEY_fake_script() -- Combat.Script 
 	local script = Instance.new('Script', Combat)
 	local req = require
 	local require = function(obj)
@@ -899,8 +891,8 @@ local function RQLXAS_fake_script() -- Combat.Script
 		end
 	end
 end
-coroutine.wrap(RQLXAS_fake_script)()
-local function AJZQ_fake_script() -- TextButton_5.Script 
+coroutine.wrap(ZRWVEY_fake_script)()
+local function DOCSPY_fake_script() -- TextButton_5.Script 
 	local script = Instance.new('Script', TextButton_5)
 	local req = require
 	local require = function(obj)
@@ -929,8 +921,8 @@ local function AJZQ_fake_script() -- TextButton_5.Script
 		end
 	end
 end
-coroutine.wrap(AJZQ_fake_script)()
-local function WBKU_fake_script() -- Misc.Script 
+coroutine.wrap(DOCSPY_fake_script)()
+local function XXJCC_fake_script() -- Misc.Script 
 	local script = Instance.new('Script', Misc)
 	local req = require
 	local require = function(obj)
@@ -960,8 +952,8 @@ local function WBKU_fake_script() -- Misc.Script
 		end
 	end
 end
-coroutine.wrap(WBKU_fake_script)()
-local function FDAG_fake_script() -- Fill.LocalScript 
+coroutine.wrap(XXJCC_fake_script)()
+local function VDKUD_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
 	local req = require
 	local require = function(obj)
@@ -996,8 +988,8 @@ local function FDAG_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FDAG_fake_script)()
-local function GICQPL_fake_script() -- Fill_2.LocalScript 
+coroutine.wrap(VDKUD_fake_script)()
+local function POJAF_fake_script() -- Fill_2.LocalScript 
 	local script = Instance.new('LocalScript', Fill_2)
 	local req = require
 	local require = function(obj)
@@ -1032,8 +1024,8 @@ local function GICQPL_fake_script() -- Fill_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GICQPL_fake_script)()
-local function ZRUW_fake_script() -- Visuals.Script 
+coroutine.wrap(POJAF_fake_script)()
+local function JXICDKD_fake_script() -- Visuals.Script 
 	local script = Instance.new('Script', Visuals)
 	local req = require
 	local require = function(obj)
@@ -1063,8 +1055,8 @@ local function ZRUW_fake_script() -- Visuals.Script
 		end
 	end
 end
-coroutine.wrap(ZRUW_fake_script)()
-local function SPCHG_fake_script() -- Fill_3.LocalScript 
+coroutine.wrap(JXICDKD_fake_script)()
+local function DBPNS_fake_script() -- Fill_3.LocalScript 
 	local script = Instance.new('LocalScript', Fill_3)
 	local req = require
 	local require = function(obj)
@@ -1097,8 +1089,8 @@ local function SPCHG_fake_script() -- Fill_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SPCHG_fake_script)()
-local function FWAYRT_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(DBPNS_fake_script)()
+local function YCXDZUS_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 	local req = require
 	local require = function(obj)
@@ -1130,8 +1122,8 @@ local function FWAYRT_fake_script() -- TextButton_9.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(FWAYRT_fake_script)()
-local function KOGDNC_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(YCXDZUS_fake_script)()
+local function GXZGM_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 	local req = require
 	local require = function(obj)
@@ -1354,8 +1346,8 @@ local function KOGDNC_fake_script() -- TextButton_10.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(KOGDNC_fake_script)()
-local function AYTU_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(GXZGM_fake_script)()
+local function YMVJDT_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 	local req = require
 	local require = function(obj)
@@ -1647,8 +1639,8 @@ local function AYTU_fake_script() -- TextButton_11.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(AYTU_fake_script)()
-local function RQSWZ_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(YMVJDT_fake_script)()
+local function DNUY_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 	local req = require
 	local require = function(obj)
@@ -1787,4 +1779,4 @@ local function RQSWZ_fake_script() -- TextButton_12.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(RQSWZ_fake_script)()
+coroutine.wrap(DNUY_fake_script)()
