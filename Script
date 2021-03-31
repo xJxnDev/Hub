@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local Gui = Instance.new("ScreenGui")
+local Detect = Instance.new("ScreenGui")
 local ArsenalGUI = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
@@ -54,30 +54,15 @@ local UICorner_17 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
 local TextButton_10 = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local Login = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local UICorner_20 = Instance.new("UICorner")
-local TextButton_11 = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local TextLabel_11 = Instance.new("TextLabel")
-local GameDetectedGUI = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
-local Inner = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
-local TextButton_12 = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
 
 --Properties:
 
-Gui.Name = "Gui"
-Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Detect.Name = "Detect"
+Detect.Parent = game.CoreGui
+Detect.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ArsenalGUI.Name = "ArsenalGUI"
-ArsenalGUI.Parent = Gui
+ArsenalGUI.Parent = Detect
 ArsenalGUI.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 ArsenalGUI.Position = UDim2.new(0.0252930298, 0, 0.0668449178, 0)
 ArsenalGUI.Size = UDim2.new(0, 443, 0, 300)
@@ -485,134 +470,10 @@ TextButton_10.TextSize = 14.000
 UICorner_18.CornerRadius = UDim.new(0, 5)
 UICorner_18.Parent = TextButton_10
 
-Login.Name = "Login"
-Login.Parent = Gui
-Login.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Login.Position = UDim2.new(0, 626, 0, 167)
-Login.Size = UDim2.new(0.276647747, 0, 0.453208506, 0)
-
-UICorner_19.CornerRadius = UDim.new(0, 5)
-UICorner_19.Parent = Login
-
-TextBox.Parent = Login
-TextBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextBox.Position = UDim2.new(0.086214073, 0, 0.369259566, 0)
-TextBox.Size = UDim2.new(0, 371, 0, 99)
-TextBox.Font = Enum.Font.GothamBold
-TextBox.PlaceholderText = "Enter Password"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 37.000
-TextBox.TextWrapped = true
-
-UICorner_20.CornerRadius = UDim.new(0, 5)
-UICorner_20.Parent = TextBox
-
-TextButton_11.Parent = Login
-TextButton_11.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextButton_11.Position = UDim2.new(0.0794444457, 0, 0.769065261, 0)
-TextButton_11.Size = UDim2.new(0, 388, 0, 61)
-TextButton_11.Font = Enum.Font.GothamBold
-TextButton_11.Text = "Login"
-TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_11.TextSize = 47.000
-TextButton_11.TextWrapped = true
-
-UICorner_21.CornerRadius = UDim.new(0, 5)
-UICorner_21.Parent = TextButton_11
-
-Frame_2.Parent = TextButton_11
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.5, 0, 1, 0)
-Frame_2.Size = UDim2.new(0, 0, 0, 3)
-
-TextLabel_11.Parent = Login
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.Position = UDim2.new(0, 0, -0.00113024749, 0)
-TextLabel_11.Size = UDim2.new(0, 436, 0, 86)
-TextLabel_11.Font = Enum.Font.Oswald
-TextLabel_11.Text = "Zyxo"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.TextSize = 100.000
-TextLabel_11.TextWrapped = true
-
-GameDetectedGUI.Name = "GameDetectedGUI"
-GameDetectedGUI.Parent = Gui
-GameDetectedGUI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-GameDetectedGUI.Position = UDim2.new(-0.280690968, 0, 0.3609626, 0)
-GameDetectedGUI.Size = UDim2.new(0, 455, 0, 246)
-
-UICorner_22.CornerRadius = UDim.new(0, 5)
-UICorner_22.Parent = GameDetectedGUI
-
-Inner.Name = "Inner"
-Inner.Parent = GameDetectedGUI
-Inner.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Inner.Position = UDim2.new(0.0197802205, 0, 0.0447154455, 0)
-Inner.Size = UDim2.new(0, 435, 0, 225)
-
-UICorner_23.CornerRadius = UDim.new(0, 5)
-UICorner_23.Parent = Inner
-
-Title.Name = "Title"
-Title.Parent = Inner
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0252873562, 0, 0.0533333346, 0)
-Title.Size = UDim2.new(0, 416, 0, 82)
-Title.Font = Enum.Font.GothamBold
-Title.Text = "Game detected:"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
-
-TextButton_12.Parent = Inner
-TextButton_12.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-TextButton_12.Position = UDim2.new(0.0252873562, 0, 0.417777777, 0)
-TextButton_12.Size = UDim2.new(0, 416, 0, 121)
-TextButton_12.Font = Enum.Font.GothamBold
-TextButton_12.Text = "Arsenal"
-TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_12.TextSize = 84.000
-TextButton_12.TextWrapped = true
-
-UICorner_24.CornerRadius = UDim.new(0, 5)
-UICorner_24.Parent = TextButton_12
-
--- Module Scripts:
-
-local fake_module_scripts = {}
-
-do -- Login.ModuleScript
-	local script = Instance.new('ModuleScript', Login)
-	local function module_script()
-		local whitelist = {
-			["Jxn_Devv"] = true,
-			["Aimlock_Jan"] = true,
-		}
-		
-		return whitelist
-		
-	end
-	fake_module_scripts[script] = module_script
-end
-
-
 -- Scripts:
 
-local function KWNLJFG_fake_script() -- ArsenalGUI.Script 
+local function RMXIHI_fake_script() -- ArsenalGUI.Script 
 	local script = Instance.new('Script', ArsenalGUI)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	frame = script.Parent --Name of your frame
 	frame.Draggable = true
@@ -620,17 +481,9 @@ local function KWNLJFG_fake_script() -- ArsenalGUI.Script
 	frame.Selectable = true
 	
 end
-coroutine.wrap(KWNLJFG_fake_script)()
-local function COAD_fake_script() -- ArsenalGUI.LocalScript 
+coroutine.wrap(RMXIHI_fake_script)()
+local function YILZSD_fake_script() -- ArsenalGUI.LocalScript 
 	local script = Instance.new('LocalScript', ArsenalGUI)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local UIS = game:GetService("UserInputService")
 	
@@ -646,17 +499,9 @@ local function COAD_fake_script() -- ArsenalGUI.LocalScript
 		end
 	end)
 end
-coroutine.wrap(COAD_fake_script)()
-local function KVVT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YILZSD_fake_script)()
+local function JWELJFM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	silent = false
 	
@@ -716,17 +561,9 @@ local function KVVT_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KVVT_fake_script)()
-local function JPEKLW_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JWELJFM_fake_script)()
+local function WNQF_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	silent = false
 	local camera = game.Workspace.CurrentCamera
@@ -791,17 +628,9 @@ local function JPEKLW_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JPEKLW_fake_script)()
-local function EZNXJI_fake_script() -- Combat.Script 
+coroutine.wrap(WNQF_fake_script)()
+local function EWFCE_fake_script() -- Combat.Script 
 	local script = Instance.new('Script', Combat)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.CombatFrame.Visible == false then
@@ -822,17 +651,9 @@ local function EZNXJI_fake_script() -- Combat.Script
 		end
 	end
 end
-coroutine.wrap(EZNXJI_fake_script)()
-local function PADEFDG_fake_script() -- TextButton_3.Script 
+coroutine.wrap(EWFCE_fake_script)()
+local function CBAJN_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent["Movement Frame"].Visible == false then
@@ -852,17 +673,9 @@ local function PADEFDG_fake_script() -- TextButton_3.Script
 		end
 	end
 end
-coroutine.wrap(PADEFDG_fake_script)()
-local function JUFE_fake_script() -- Misc.Script 
+coroutine.wrap(CBAJN_fake_script)()
+local function QITMCK_fake_script() -- Misc.Script 
 	local script = Instance.new('Script', Misc)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent["Misc Frame"].Visible == false then
@@ -883,17 +696,9 @@ local function JUFE_fake_script() -- Misc.Script
 		end
 	end
 end
-coroutine.wrap(JUFE_fake_script)()
-local function LAGIK_fake_script() -- Fill.LocalScript 
+coroutine.wrap(QITMCK_fake_script)()
+local function ORSKRU_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local UserInputService = game:GetService("UserInputService")
 	local Dragging = false
@@ -919,17 +724,9 @@ local function LAGIK_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LAGIK_fake_script)()
-local function AIFWI_fake_script() -- Fill_2.LocalScript 
+coroutine.wrap(ORSKRU_fake_script)()
+local function PWYLP_fake_script() -- Fill_2.LocalScript 
 	local script = Instance.new('LocalScript', Fill_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local UserInputService = game:GetService("UserInputService")
 	local Dragging = false
@@ -955,17 +752,9 @@ local function AIFWI_fake_script() -- Fill_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AIFWI_fake_script)()
-local function ZGUZSYC_fake_script() -- Visuals.Script 
+coroutine.wrap(PWYLP_fake_script)()
+local function GIGDPQZ_fake_script() -- Visuals.Script 
 	local script = Instance.new('Script', Visuals)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.VisualsFrame.Visible == false then
@@ -986,17 +775,9 @@ local function ZGUZSYC_fake_script() -- Visuals.Script
 		end
 	end
 end
-coroutine.wrap(ZGUZSYC_fake_script)()
-local function FXVMPO_fake_script() -- Fill_3.LocalScript 
+coroutine.wrap(GIGDPQZ_fake_script)()
+local function SMPP_fake_script() -- Fill_3.LocalScript 
 	local script = Instance.new('LocalScript', Fill_3)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local UserInputService = game:GetService("UserInputService")
 	local Dragging = false
@@ -1020,17 +801,9 @@ local function FXVMPO_fake_script() -- Fill_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FXVMPO_fake_script)()
-local function KVOL_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(SMPP_fake_script)()
+local function QYZNYZ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	visible = false
 	local camera = workspace.CurrentCamera
@@ -1053,17 +826,9 @@ local function KVOL_fake_script() -- TextButton_7.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(KVOL_fake_script)()
-local function DKIBYEP_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(QYZNYZ_fake_script)()
+local function JHHFAUG_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	visible = false
 	toggle = false
@@ -1277,17 +1042,9 @@ local function DKIBYEP_fake_script() -- TextButton_8.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(DKIBYEP_fake_script)()
-local function UXGQJ_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(JHHFAUG_fake_script)()
+local function POSPZ_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	visible = false
 	local camera = workspace.CurrentCamera
@@ -1570,17 +1327,9 @@ local function UXGQJ_fake_script() -- TextButton_9.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(UXGQJ_fake_script)()
-local function NWZRA_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(POSPZ_fake_script)()
+local function JSVAUGF_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	visible = false
 	local camera = workspace.CurrentCamera
@@ -1710,82 +1459,4 @@ local function NWZRA_fake_script() -- TextButton_10.LocalScript
 		end	
 	end)
 end
-coroutine.wrap(NWZRA_fake_script)()
-local function JDFF_fake_script() -- TextButton_11.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_11)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local whitelist = require(script.Parent.Parent.ModuleScript)
-	local pass = "IfnVNkaAitN"
-	local player = game.Players.LocalPlayer
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if whitelist[player.Name] and script.Parent.Parent.TextBox.Text == pass then
-			print(player.Name .. " Is whitelisted")
-			script.Parent.Parent.TextBox.Visible = false
-			script.Parent.Parent.TextButton.Visible = false
-			script.Parent.Parent.Visible = false
-			
-			script.Parent.Parent.Parent.GameDetectedGUI:TweenPosition(
-				UDim2.new(0.337, 0,0.39, 0),
-				"Out",
-				"Quad",
-				.5,
-				false
-			)
-			
-		else
-			player:Kick("You are not Whitelisted or you entered the wrong Password!")
-		end
-	end)
-end
-coroutine.wrap(JDFF_fake_script)()
-local function RFSNSNS_fake_script() -- TextButton_12.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_12)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	while wait() do
-		if game.PlaceId == 286090429 then
-			script.Parent.Text = "Arsenal"
-		end
-	end
-	
-	if game.PlaceId ~= 286090429 then
-		script.Parent.Text = "Please Enter a Supported Game!"
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.GameDetectedGUI:TweenPosition(
-			UDim2.new(-0.281, 0,0.361, 0),
-			"In",
-			"Quad",
-			.5,
-			false
-		)
-		
-		if game.PlaceId == 286090429 then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/xJxnDev/Hub/main/Script'),true))()
-		else
-			game.Players.LocalPlayer:Kick("Go in a Supported Game!")
-		end
-		
-		
-		script.Parent.Parent.Parent.Parent.ArsenalGUI.Visible = true
-	end)
-end
-coroutine.wrap(RFSNSNS_fake_script)()
-
+coroutine.wrap(JSVAUGF_fake_script)()
