@@ -1,0 +1,223 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Gui = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local GameDetectedGUI = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Inner = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Login.Name = "Login"
+Login.Parent = Gui
+Login.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Login.Position = UDim2.new(0, 626, 0, 167)
+Login.Size = UDim2.new(0.276647747, 0, 0.453208506, 0)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Login
+
+TextBox.Parent = Login
+TextBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextBox.Position = UDim2.new(0.086214073, 0, 0.369259566, 0)
+TextBox.Size = UDim2.new(0, 371, 0, 99)
+TextBox.Font = Enum.Font.GothamBold
+TextBox.PlaceholderText = "Enter Password"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 37.000
+TextBox.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = TextBox
+
+TextButton.Parent = Login
+TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextButton.Position = UDim2.new(0.0794444457, 0, 0.769065261, 0)
+TextButton.Size = UDim2.new(0, 388, 0, 61)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "Login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 47.000
+TextButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = TextButton
+
+Frame.Parent = TextButton
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, 0, 1, 0)
+Frame.Size = UDim2.new(0, 0, 0, 3)
+
+TextLabel.Parent = Login
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.00113024749, 0)
+TextLabel.Size = UDim2.new(0, 436, 0, 86)
+TextLabel.Font = Enum.Font.Oswald
+TextLabel.Text = "Zyxo"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 100.000
+TextLabel.TextWrapped = true
+
+GameDetectedGUI.Name = "GameDetectedGUI"
+GameDetectedGUI.Parent = Gui
+GameDetectedGUI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GameDetectedGUI.Position = UDim2.new(-0.280690968, 0, 0.3609626, 0)
+GameDetectedGUI.Size = UDim2.new(0, 455, 0, 246)
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = GameDetectedGUI
+
+Inner.Name = "Inner"
+Inner.Parent = GameDetectedGUI
+Inner.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Inner.Position = UDim2.new(0.0197802205, 0, 0.0447154455, 0)
+Inner.Size = UDim2.new(0, 435, 0, 225)
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Inner
+
+Title.Name = "Title"
+Title.Parent = Inner
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0252873562, 0, 0.0533333346, 0)
+Title.Size = UDim2.new(0, 416, 0, 82)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Game detected:"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextButton_2.Parent = Inner
+TextButton_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TextButton_2.Position = UDim2.new(0.0252873562, 0, 0.417777777, 0)
+TextButton_2.Size = UDim2.new(0, 416, 0, 121)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "Arsenal"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 84.000
+TextButton_2.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = TextButton_2
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- Login.ModuleScript
+	local script = Instance.new('ModuleScript', Login)
+	local function module_script()
+		local whitelist = {
+			["Jxn_Devv"] = true,
+			["Aimlock_Jan"] = true,
+		}
+		
+		return whitelist
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
+-- Scripts:
+
+local function YKEGNBW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local whitelist = require(script.Parent.Parent.ModuleScript)
+	local pass = "IfnVNkaAitN"
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if whitelist[player.Name] and script.Parent.Parent.TextBox.Text == pass then
+			print(player.Name .. " Is whitelisted")
+			script.Parent.Parent.TextBox.Visible = false
+			script.Parent.Parent.TextButton.Visible = false
+			script.Parent.Parent.Visible = false
+			
+			script.Parent.Parent.Parent.GameDetectedGUI:TweenPosition(
+				UDim2.new(0.337, 0,0.39, 0),
+				"Out",
+				"Quad",
+				.5,
+				false
+			)
+			
+		else
+			player:Kick("You are not Whitelisted or you entered the wrong Password!")
+		end
+	end)
+end
+coroutine.wrap(YKEGNBW_fake_script)()
+local function LXUGZN_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	while wait() do
+		if game.PlaceId == 286090429 then
+			script.Parent.Text = "Arsenal"
+			
+		elseif game.PlaceId ~= 286090429 then
+			script.Parent.Text = "Please Enter a Supported Game!"
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.GameDetectedGUI:TweenPosition(
+			UDim2.new(-0.281, 0,0.361, 0),
+			"In",
+			"Quad",
+			.5,
+			false
+		)
+		
+		if game.PlaceId == 286090429 then
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/xJxnDev/Hub/main/Script'),true))()
+		else
+			game.Players.LocalPlayer:Kick("Go in a Supported Game!")
+		end
+		
+		
+		script.Parent.Parent.Parent.Parent.ArsenalGUI.Visible = true
+	end)
+end
+coroutine.wrap(LXUGZN_fake_script)()
